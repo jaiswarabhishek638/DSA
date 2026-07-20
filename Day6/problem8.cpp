@@ -4,6 +4,7 @@
 // 5 4 3 2 
 // 5 4 3 2 1 print this pattern
 
+
 #include<iostream>
 using namespace std;
 int main(){
