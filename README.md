@@ -18,9 +18,13 @@ Below is the structured path followed in this repository, designed to build stro
 | **05** | [Loops & Iteration](#5-loops--iteration) | `for`, `while`, and `do-while` control structures | 🟢 Completed |
 | **06** | [Pattern Printing - Basics](#6-pattern-printing---basic-level) | Solid/Hollow rectangles, simple triangles | 🟢 Completed |
 | **07** | [Pattern Printing - Intermediate](#7-pattern-printing---intermediate-level) | Inverted pyramids, number/character patterns | 🟢 Completed  |
-| **08** | [Pattern Printing - Advanced](#8-pattern-printing---advanced--hard-level) | Palindromic pyramids, diamonds, Pascal's triangle | 🟡 In Progress  |
+| **08** | [Pattern Printing - Advanced](#8-pattern-printing---advanced--hard-level) | Palindromic pyramids, diamonds, Pascal's triangle | 🟢 Completed  |
+| **09** | [Operators - Advanced](Theory + practical) | Topic | 🟡 In Progress |
 
+```
+---🟡 In Progress 
 ---🔴 Upcoming
+```
 
 ## 📂 Section Breakdowns
 
@@ -41,17 +45,17 @@ int main() {
     return 0;
 }
 ```
-#3. Input & Output in C++Mastering how data enters and leaves our programs, alongside understanding variables, memory sizes, and data types (int, float, char, bool, double).
+###3. Input & Output in C++Mastering how data enters and leaves our programs, alongside understanding variables, memory sizes, and data types (int, float, char, bool, double).
 Using cin >> for user inputs.
 Using cout << for displaying data.
 Handling whitespace strings using getline().
 
-#4. Conditionals (if, else, else if)Teaching the program how to make choices based on conditional expressions and logical operators (&&, ||, !).
+###4. Conditionals (if, else, else if)Teaching the program how to make choices based on conditional expressions and logical operators (&&, ||, !).
 * Checking if a number is even or odd.
 * Grading systems using else if ladders.
 * Code optimization by arranging conditions efficiently.
 
-#5. Loops & IterationAutomating repetitive tasks. This folder deep-dives into execution control, boundary conditions, and avoiding infinite loops.
+###5. Loops & IterationAutomating repetitive tasks. This folder deep-dives into execution control, boundary conditions, and avoiding infinite loops.
 * while loop: When the number of iterations is unknown.
 * for loop: Ideal for sequential, known iterations.
 *  do-while loop: Executing at least once before checking the condition.
@@ -60,17 +64,17 @@ Handling whitespace strings using getline().
 ###🧱 The Pattern Printing Trilogy (Sections 6, 7 & 8)Pattern printing is the ultimate tool for mastering nested loops and visual matrix logic.
 It transitions from basic grid manipulation to complex coordinate mapping.
 
-#6. Pattern Printing - Basic LevelUnderstanding Rows and Columns ($i, j$ mapping).
+###6. Pattern Printing - Basic LevelUnderstanding Rows and Columns ($i, j$ mapping).
 * Solid Rectangle: Basic nested loop grid.
 * Hollow Rectangle: Conditional boundary printing (i == 1 || i == n).
 * Half Pyramid: Dependent inner loop controls (j <= i).
 
-#7. Pattern Printing - Intermediate LevelHandling spaces and varying data types inside loops.
+###7. Pattern Printing - Intermediate LevelHandling spaces and varying data types inside loops.
 * Inverted Half Pyramid: Counting down loops.
 * Numbered Pyramids: Printing loop counters instead of stars (*).
 * Floyd's Triangle: Continuously increasing integer tracking across rows.
 
-#8. Pattern Printing - Advanced & Hard LevelComplex algorithmic logic involving multiple sub-loops and symmetrical math.
+###8. Pattern Printing - Advanced & Hard LevelComplex algorithmic logic involving multiple sub-loops and symmetrical math.
 * Butterfly Pattern: Multi-zone space and star calculations.
 * Diamond Pattern: Symmetrical upper and lower inverted loops.
 * Palindromic Pyramids: Counting down then counting up on the same line.
