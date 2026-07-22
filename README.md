@@ -19,7 +19,8 @@ Below is the structured path followed in this repository, designed to build stro
 | **06** | [Pattern Printing - Basics](#6-pattern-printing---basic-level) | Solid/Hollow rectangles, simple triangles | 🟢 Completed |
 | **07** | [Pattern Printing - Intermediate](#7-pattern-printing---intermediate-level) | Inverted pyramids, number/character patterns | 🟢 Completed  |
 | **08** | [Pattern Printing - Advanced](#8-pattern-printing---advanced--hard-level) | Palindromic pyramids, diamonds, Pascal's triangle | 🟢 Completed  |
-| **09** | [Operators - Advanced](Theory + practical) | Topic | 🟡 In Progress |
+| **09** | [Operators - Advanced ](#9-BODMAS-Arithmetic-1.Urinary-2.Binary-Comparision-Logical-Bitwise-Assignment--operator) | Operators | 🟢 Completed |
+| **10** | [] | 🟡 In Progress  |
 
 ```
 ---🟡 In Progress 
@@ -84,6 +85,91 @@ It transitions from basic grid manipulation to complex coordinate mapping.
       2 1 2
     3 2 1 2 3
   4 3 2 1 2 3 4
+
+  ###9. Operators
+  #1. Comparision operators  #4 arithmetic operator
+```int main(){
+    // comparision operator 
+    // 1/0
+    int x,y;
+    cout<<"Enter the value of x: ";
+    cin>>x;
+    cout<<"Enter the value of y: ";
+    cin>>y;
+    // check whether the value is equal or not
+    if(x!=y){
+        cout<<x<<" and "<<y<<" are not equal and"<<endl;
+        if(x>y){
+            cout<<x<<" is greater"<<endl;
+        }
+        else{
+            cout<<y<<" is greater"<<endl;
+        }
+    }
+    else cout<<x <<" and "<<y<<" are equal"<<endl;
+}
+```
+#2.Logical operators
+```
+int main(){
+    int a,b,c;
+    cout<<"Enter the first value: ";
+    cin>>a;
+    cout<<"Enter the second value: ";
+    cin>>b;
+    cout<<"Enter the third value: ";
+    cin>>c;
+    if(a>b && a>c){
+        cout<<"a is greater"<<endl;
+    }else if(b>c){
+        cout<<"b is greater"<<endl;
+    }
+    else{
+        cout<<"c is greater"<<endl;
+    }
+}
+```
+#3.Bitwise Operator
+```
+int main(){
+    // & bitwise operator
+    int ans = 2 & 3;
+    // 2 = 10 & 3 = 11 
+    // 1 0 
+    // 1 1
+    // ans 1 0 = 2
+    cout<<ans<<endl; //2 
+
+    // | bitwise operator 
+    int Orr = 2 | 3;
+    // 2 = 1 0
+    // 3 = 1 1
+    //     1 1 = 3
+    cout<<Orr<<endl;//3
+
+    // ^ bitwise operator
+    int NotO = 2^ 3;
+    // 2 = 1 0
+    // 3 = 1 1
+    //     0 1 = 1
+    cout<<NotO<<endl;//1
+
+    // << (left shift operator)
+    int leftSh=9<<3;
+    // formula num * 2^x;
+    // 9 * 2^3 =72
+    cout<<leftSh<<endl;//72
+
+    // >> (right shift operator)
+    int rightSh=32>>4;
+    // formula num /x^2;
+    // 27 / 3^2 = 1;
+    cout<<rightSh<<endl;//1
+
+    
+}
+```
+  
 🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
 git clone [[https://github.com/jaiswarabhishek638/DSA.git](https://github.com/jaiswarabhishek638/DSA.git)]
 
