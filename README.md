@@ -86,8 +86,8 @@ It transitions from basic grid manipulation to complex coordinate mapping.
     3 2 1 2 3
   4 3 2 1 2 3 4
 
-  ###9. Operators
-  #1. Comparision operators  #4 arithmetic operator
+###9. Operators
+#1. Comparision operators  #4 arithmetic operator
 ```int main(){
     // comparision operator 
     // 1/0
