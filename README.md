@@ -1,4 +1,4 @@
-# DSA
+# DSA with CODERARMY
 # 🚀 DSA Mastery Journey: From Fundamentals to Advanced Patterns
 
 Welcome to my Data Structures and Algorithms (DSA) repository! This space serves as a comprehensive log of my journey, tracking everything from core computational logic to advanced problem-solving techniques in C++. 
@@ -15,12 +15,12 @@ Below is the structured path followed in this repository, designed to build stro
 | **02** | [First Program in C++](#2-first-program-in-c) | Structure of C++, compilers, `main()` function | 🟢 Completed |
 | **03** | [Input & Output](#3-input--output-in-c) | Streams (`cin`, `cout`), data types, and modifiers | 🟢 Completed |
 | **04** | [Conditionals](#4-conditionals-if-else--else-if) | Decision-making (`if`, `else if`, `else`, `switch`) | 🟢 Completed |
-| **05** | [Loops & Iteration](#5-loops--iteration) | `for`, `while`, and `do-while` control structures | 🟢 Completed |
+| **05** | [Loops & Iteration](#5-for-loops) | `for`, `while`, and `do-while` control structures | 🟢 Completed |
 | **06** | [Pattern Printing - Basics](#6-pattern-printing---basic-level) | Solid/Hollow rectangles, simple triangles | 🟢 Completed |
 | **07** | [Pattern Printing - Intermediate](#7-pattern-printing---intermediate-level) | Inverted pyramids, number/character patterns | 🟢 Completed  |
 | **08** | [Pattern Printing - Advanced](#8-pattern-printing---advanced--hard-level) | Palindromic pyramids, diamonds, Pascal's triangle | 🟢 Completed  |
 | **09** | [Operators - Advanced ](#9-BODMAS-Arithmetic-1.Urinary-2.Binary-Comparision-Logical-Bitwise-Assignment--operator) | Operators | 🟢 Completed |
-| **10** | [] | 🟡 In Progress  |
+| **10** | [Loop Advanced](#10-switch-do-while-break-continue-scope-of-variable) `while`, and `do-while` control structures | Loop Advanced | 🟢 Completed   |
 
 ```
 ---🟡 In Progress 
@@ -169,8 +169,41 @@ int main(){
     
 }
 ```
+
+###10. 📚 What I Covered:
+* **While & Do-While Loops:** Masters of conditional repetition. Explored the entry-controlled nature of `while` vs. the exit-controlled nature of `do-while`.
+* **The `do-while` Disadvantage:** Realised how a `do-while` loop executes code at least once before checking conditions, which can lead to logical bugs if data inputs (like `0`) are not explicitly guarded.
+* **Jump Statements (`break` & `continue`):** 
+  * `break` exits a loop instantly when a target element is found.
+  * `continue` skips the current iteration and jumps directly to the condition or update stage.
+* **Switch-Case Matrix:** Cleanly mapped matching integers and characters to clear actions while avoiding structural constraints.
+* **Scope of Variables:** Understood local vs. global scopes, variable lifetimes inside curly braces `{}`, and how redeclaration flags errors inside the exact same execution block.
+
+---
+### 🛠️ Practical Implementations Completed:
+1. **Factors of a Number:** Wrote an optimised `while` loop tracking zero-remainders (`n % i == 0`) to extract all factors sequentially.
+2. **Dynamic Multiplication Tables:** Implemented simple arithmetic iterators to generate standard custom tables.
+3. **Loop Control Optimization:** Applied the `continue` statement to systematically filter and skip multi-factor iterations without breaking program runtime.
+
+* **Learning :- Today's learning dive in the #180DaysOfCode challenge was all about mastering C++ Loops, Jump Statements, and Memory Scoping Rules. 
+
+Here is a quick snapshot of what I cracked today:
+
+🔹 Entry vs. Exit Control: Deep-dived into the structural tradeoffs of 'while' vs. 'do-while'. I explored how 'do-while' loops can accidentally leak logic by running at least once before testing conditions—vital to remember when tracking absolute parameters.
+
+🔹 Controlling Flow Safely: Worked with 'break' to structurally quit iterations early and 'continue' to selectively bypass custom logic flags (like filtering numbers or optimizing prime checks) without terminating loop execution.
+
+🔹 Variable Scoping & Lifetimes: Demystified how C++ allocates boundaries inside block curly braces {}. Learned how compilers resolve nested lookup paths and prevent variable redefinition crashes in identical scopes.
+
+💡 Applied these concepts to build programmatic factor-finders, mathematical tables, and optimized conditional filters. 
+
+
+```
+### Day12
+```
+
   
-🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
+###🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
 git clone [[https://github.com/jaiswarabhishek638/DSA.git](https://github.com/jaiswarabhishek638/DSA.git)]
 
 # Navigate to the specific directory
