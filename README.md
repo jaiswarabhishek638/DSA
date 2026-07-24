@@ -1,4 +1,4 @@
-# DSA with CODERARMY
+### DSA with CODERARMY
 # 🚀 DSA Mastery Journey: From Fundamentals to Advanced Patterns
 
 Welcome to my Data Structures and Algorithms (DSA) repository! This space serves as a comprehensive log of my journey, tracking everything from core computational logic to advanced problem-solving techniques in C++. 
@@ -21,7 +21,7 @@ Below is the structured path followed in this repository, designed to build stro
 | **08** | [Pattern Printing - Advanced](#8-pattern-printing---advanced--hard-level) | Palindromic pyramids, diamonds, Pascal's triangle | 🟢 Completed  |
 | **09** | [Operators - Advanced ](#9-BODMAS-Arithmetic-1.Urinary-2.Binary-Comparision-Logical-Bitwise-Assignment--operator) | Operators | 🟢 Completed |
 | **10** | [Loop Advanced](#10-switch-do-while-break-continue-scope-of-variable) `while`, and `do-while` control structures | Loop Advanced | 🟢 Completed   |
-
+| **11** | [Number System Conversion](#11-Number-system-conversion-binary-octal-decimal-viceversa) | Number System for Computer | conversion | 🟢 Completed   |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
@@ -198,9 +198,44 @@ Here is a quick snapshot of what I cracked today:
 💡 Applied these concepts to build programmatic factor-finders, mathematical tables, and optimized conditional filters. 
 
 
+
+### Day11: Number System Conversions in C++
+
+## A complete guide and implementation of number base conversions using direct arithmetic and bitwise optimization techniques in C++.
+
+## 📌 Features Included
+* **Decimal ↔ Binary**: Converts numbers using standard modulo/division (`% 2`, `/ 2`) and bitwise operators (`& 1`, `>> 1`).
+* **Decimal ↔ Octal**: Base-8 digit extraction and place-value reconstruction.
+* **Binary ↔ Octal**: Inter-base conversion routed via Decimal (`Binary → Decimal → Octal`).
+
 ```
-### Day12
+
+## 💡 Logic Overview
+
+### 1. Decimal to Binary
+* Extract remainder using `N % 2` or `N & 1`.
+* Shift bits/divide by 2 using `N / 2` or `N >> 1`.
+* Accumulate result: $\text{Ans} = \text{Ans} + (\text{Remainder} \times 10^i)$.
+
+### 2. Binary to Decimal
+* Extract binary digits using `N % 10`.
+* Accumulate result: $\text{Ans} = \text{Ans} + (\text{Digit} \times 2^i)$.
+* Divide number by 10 (`N / 10`) until zero.
+
+### 3. Indirect Conversions (e.g., Binary to Octal)
+Instead of direct string mapping, convert to intermediate **Decimal**, then transform to the target base.
+
+---
+
+## ⚡ Bitwise vs Arithmetic Comparison
+
+| Approach | Digit Extraction | Division / Shift | Performance |
+| :--- | :--- | :--- | :--- |
+| **Arithmetic** | `N % 2` | `N / 2` | Standard |
+| **Bitwise** | `N & 1` | `N >> 1` | Faster (Hardware-Level) |
+
 ```
+
 
   
 ###🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
