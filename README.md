@@ -21,7 +21,7 @@ Below is the structured path followed in this repository, designed to build stro
 | **08** | [Pattern Printing - Advanced](#8-pattern-printing---advanced--hard-level) | Palindromic pyramids, diamonds, Pascal's triangle | 🟢 Completed  |
 | **09** | [Operators - Advanced ](#9-BODMAS-Arithmetic-1.Urinary-2.Binary-Comparision-Logical-Bitwise-Assignment--operator) | Operators | 🟢 Completed |
 | **10** | [Loop Advanced](#10-switch-do-while-break-continue-scope-of-variable) `while`, and `do-while` control structures | Loop Advanced | 🟢 Completed   |
-| **11** | [Number System Conversion](#11-Number-system-conversion-binary-octal-decimal-viceversa) | Number System for Computer | conversion | 🟢 Completed   |
+| **11** | [Number System Conversion](#11-Number-system-conversion-binary-octal-decimal-viceversa) | Number System for Computer | 🟢 Completed   |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
