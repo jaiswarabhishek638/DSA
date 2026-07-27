@@ -22,6 +22,7 @@ Below is the structured path followed in this repository, designed to build stro
 | **09** | [Operators - Advanced ](#9-BODMAS-Arithmetic-1.Urinary-2.Binary-Comparision-Logical-Bitwise-Assignment--operator) | Operators | 🟢 Completed |
 | **10** | [Loop Advanced](#10-switch-do-while-break-continue-scope-of-variable) `while`, and `do-while` control structures | Loop Advanced | 🟢 Completed   |
 | **11** | [Number System Conversion](#11-Number-system-conversion-binary-octal-decimal-viceversa) | Number System for Computer | 🟢 Completed   |
+| **13** | [Function](#13-Function-callbyvalue-callbyreference-&-swapbyreference-using&---method-overloading) | call by reference, value,method overloading | 🟢 Completed   |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
@@ -198,19 +199,7 @@ Here is a quick snapshot of what I cracked today:
 💡 Applied these concepts to build programmatic factor-finders, mathematical tables, and optimized conditional filters. 
 
 
-
-### Day11: Number System Conversions in C++
-
-## A complete guide and implementation of number base conversions using direct arithmetic and bitwise optimization techniques in C++.
-
-## 📌 Features Included
-* **Decimal ↔ Binary**: Converts numbers using standard modulo/division (`% 2`, `/ 2`) and bitwise operators (`& 1`, `>> 1`).
-* **Decimal ↔ Octal**: Base-8 digit extraction and place-value reconstruction.
-* **Binary ↔ Octal**: Inter-base conversion routed via Decimal (`Binary → Decimal → Octal`).
-
-```
-
-## 💡 Logic Overview
+### 💡 Logic Overview
 
 ### 1. Decimal to Binary
 * Extract remainder using `N % 2` or `N & 1`.
@@ -234,7 +223,69 @@ Instead of direct string mapping, convert to intermediate **Decimal**, then tran
 | **Arithmetic** | `N % 2` | `N / 2` | Standard |
 | **Bitwise** | `N & 1` | `N >> 1` | Faster (Hardware-Level) |
 
+### Day11: Number System Conversions in C++
+
+## A complete guide and implementation of number base conversions using direct arithmetic and bitwise optimization techniques in C++.
+
+## 📌 Features Included
+* **Decimal ↔ Binary**: Converts numbers using standard modulo/division (`% 2`, `/ 2`) and bitwise operators (`& 1`, `>> 1`).
+* **Decimal ↔ Octal**: Base-8 digit extraction and place-value reconstruction.
+* **Binary ↔ Octal**: Inter-base conversion routed via Decimal (`Binary → Decimal → Octal`).
+
+### Day13:Function in c++
+## Topics Covered1. 
+. Call by Value vs. Call by Reference
+** Understanding how data is passed into functions and its impact on performance and memory.
+** Call by Value: Creates a local copy of the argument. Changes made inside the function do not affect the original variable.
+** Call by Reference: Passes an alias (&) to the original argument. Changes made inside the function directly update the original variable.
+** 2. Function OverloadingHow to define multiple functions with the same name to improve code readability and reusability.
+** Criteria: Functions must have different numbers or types of parameters.Limitation: Changing only the return type is not allowed.
+** Code ExamplesParameter Passing (main.cpp)
+cpp
 ```
+#include <iostream>
+using namespace std;
+
+void modifyByValue(int x) {
+    x = 100; 
+}
+
+void modifyByReference(int &x) {
+    x = 100; 
+}
+
+int main() {
+    int num1 = 20;
+    int num2 = 20;
+
+    modifyByValue(num1);
+    cout << "After call by value: " << num1 << endl; // Output: 20
+
+    modifyByReference(num2);
+    cout << "After call by reference: " << num2 << endl; // Output: 100
+
+    return 0;
+}
+Use code with caution.Overloading (overloading.cpp)cpp#include <iostream>
+using namespace std;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+double add(double a, double b) {
+    return a + b;
+}
+
+int main() {
+    cout << "Int addition: " << add(5, 10) << endl;       // Outputs: 15
+    cout << "Double addition: " << add(2.5, 3.5) << endl; // Outputs: 6.0
+    return 0;
+}
+```
+
+
+
 
 
   
