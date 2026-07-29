@@ -1,4 +1,4 @@
-### DSA with CODERARMY
+# DSA with CODERARMY
 # 🚀 DSA Mastery Journey: From Fundamentals to Advanced Patterns
 
 Welcome to my Data Structures and Algorithms (DSA) repository! This space serves as a comprehensive log of my journey, tracking everything from core computational logic to advanced problem-solving techniques in C++. 
@@ -22,7 +22,8 @@ Below is the structured path followed in this repository, designed to build stro
 | **09** | [Operators - Advanced ](#9-BODMAS-Arithmetic-1.Urinary-2.Binary-Comparision-Logical-Bitwise-Assignment--operator) | Operators | 🟢 Completed |
 | **10** | [Loop Advanced](#10-switch-do-while-break-continue-scope-of-variable) `while`, and `do-while` control structures | Loop Advanced | 🟢 Completed   |
 | **11** | [Number System Conversion](#11-Number-system-conversion-binary-octal-decimal-viceversa) | Number System for Computer | 🟢 Completed   |
-| **13** | [Function](#13-Function-callbyvalue-callbyreference-&-swapbyreference-using&---method-overloading) | call by reference, value,method overloading | 🟢 Completed   |
+| **13** | [Function](#13-Function-callbyvalue-callbyreference-&-swapbyreference-using&---method-overloading) | call by reference, value,method overloading | 🟢 Completed |
+| **15** | [ARRAY](#15-Arraysame-datatype-cointiguous-memory-loctn) | memory consumption in array,sizeof(),0 based vs 1 based index, 32 vs 64 byte processor| 🟢 Completed  |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
@@ -30,13 +31,13 @@ Below is the structured path followed in this repository, designed to build stro
 
 ## 📂 Section Breakdowns
 
-### 1. Flowcharts & Pseudocode
+## 1. Flowcharts & Pseudocode
 Before writing code, we must think like a computer. This section focuses on translating real-world problems into visual logic and step-by-step algorithms.
 * **Flowcharts:** Terminal, Input/Output, Processing, and Decision blocks.
 * **Pseudocode:** Writing structural code in plain English.
 * *Example code:* Finding the largest of three numbers, checking prime numbers.
 
-### 2. First Program in C++
+## 2. First Program in C++
 Setting up the boilerplate code, understanding standard namespaces, and breaking down how a C++ source file compiles into executable machine code.
 ```cpp
 #include <iostream>
@@ -47,36 +48,36 @@ int main() {
     return 0;
 }
 ```
-###3. Input & Output in C++Mastering how data enters and leaves our programs, alongside understanding variables, memory sizes, and data types (int, float, char, bool, double).
+##3. Input & Output in C++Mastering how data enters and leaves our programs, alongside understanding variables, memory sizes, and data types (int, float, char, bool, double).
 Using cin >> for user inputs.
 Using cout << for displaying data.
 Handling whitespace strings using getline().
 
-###4. Conditionals (if, else, else if)Teaching the program how to make choices based on conditional expressions and logical operators (&&, ||, !).
+##4. Conditionals (if, else, else if)Teaching the program how to make choices based on conditional expressions and logical operators (&&, ||, !).
 * Checking if a number is even or odd.
 * Grading systems using else if ladders.
 * Code optimization by arranging conditions efficiently.
 
-###5. Loops & IterationAutomating repetitive tasks. This folder deep-dives into execution control, boundary conditions, and avoiding infinite loops.
+##5. Loops & IterationAutomating repetitive tasks. This folder deep-dives into execution control, boundary conditions, and avoiding infinite loops.
 * while loop: When the number of iterations is unknown.
 * for loop: Ideal for sequential, known iterations.
 *  do-while loop: Executing at least once before checking the condition.
 *  eyword handling: break and continue.
 
-###🧱 The Pattern Printing Trilogy (Sections 6, 7 & 8)Pattern printing is the ultimate tool for mastering nested loops and visual matrix logic.
+##🧱 The Pattern Printing Trilogy (Sections 6, 7 & 8)Pattern printing is the ultimate tool for mastering nested loops and visual matrix logic.
 It transitions from basic grid manipulation to complex coordinate mapping.
 
-###6. Pattern Printing - Basic LevelUnderstanding Rows and Columns ($i, j$ mapping).
+##6. Pattern Printing - Basic LevelUnderstanding Rows and Columns ($i, j$ mapping).
 * Solid Rectangle: Basic nested loop grid.
 * Hollow Rectangle: Conditional boundary printing (i == 1 || i == n).
 * Half Pyramid: Dependent inner loop controls (j <= i).
 
-###7. Pattern Printing - Intermediate LevelHandling spaces and varying data types inside loops.
+##7. Pattern Printing - Intermediate LevelHandling spaces and varying data types inside loops.
 * Inverted Half Pyramid: Counting down loops.
 * Numbered Pyramids: Printing loop counters instead of stars (*).
 * Floyd's Triangle: Continuously increasing integer tracking across rows.
 
-###8. Pattern Printing - Advanced & Hard LevelComplex algorithmic logic involving multiple sub-loops and symmetrical math.
+##8. Pattern Printing - Advanced & Hard LevelComplex algorithmic logic involving multiple sub-loops and symmetrical math.
 * Butterfly Pattern: Multi-zone space and star calculations.
 * Diamond Pattern: Symmetrical upper and lower inverted loops.
 * Palindromic Pyramids: Counting down then counting up on the same line.
@@ -87,9 +88,11 @@ It transitions from basic grid manipulation to complex coordinate mapping.
     3 2 1 2 3
   4 3 2 1 2 3 4
 
-###9. Operators
-#1. Comparision operators  #4 arithmetic operator
-```int main(){
+##9. Operators
+* #1. Comparision operators  
+* #4 arithmetic operator
+```cpp
+int main(){
     // comparision operator 
     // 1/0
     int x,y;
@@ -110,8 +113,8 @@ It transitions from basic grid manipulation to complex coordinate mapping.
     else cout<<x <<" and "<<y<<" are equal"<<endl;
 }
 ```
-#2.Logical operators
-```
+* #2.Logical operators
+```cpp
 int main(){
     int a,b,c;
     cout<<"Enter the first value: ";
@@ -131,7 +134,7 @@ int main(){
 }
 ```
 #3.Bitwise Operator
-```
+```cpp
 int main(){
     // & bitwise operator
     int ans = 2 & 3;
@@ -171,7 +174,7 @@ int main(){
 }
 ```
 
-###10. 📚 What I Covered:
+##10. 📚 What I Covered:
 * **While & Do-While Loops:** Masters of conditional repetition. Explored the entry-controlled nature of `while` vs. the exit-controlled nature of `do-while`.
 * **The `do-while` Disadvantage:** Realised how a `do-while` loop executes code at least once before checking conditions, which can lead to logical bugs if data inputs (like `0`) are not explicitly guarded.
 * **Jump Statements (`break` & `continue`):** 
@@ -181,7 +184,7 @@ int main(){
 * **Scope of Variables:** Understood local vs. global scopes, variable lifetimes inside curly braces `{}`, and how redeclaration flags errors inside the exact same execution block.
 
 ---
-### 🛠️ Practical Implementations Completed:
+## 🛠️ Practical Implementations Completed:
 1. **Factors of a Number:** Wrote an optimised `while` loop tracking zero-remainders (`n % i == 0`) to extract all factors sequentially.
 2. **Dynamic Multiplication Tables:** Implemented simple arithmetic iterators to generate standard custom tables.
 3. **Loop Control Optimization:** Applied the `continue` statement to systematically filter and skip multi-factor iterations without breaking program runtime.
@@ -199,19 +202,19 @@ Here is a quick snapshot of what I cracked today:
 💡 Applied these concepts to build programmatic factor-finders, mathematical tables, and optimized conditional filters. 
 
 
-### 💡 Logic Overview
+## 💡 Logic Overview
 
-### 1. Decimal to Binary
+## 1. Decimal to Binary
 * Extract remainder using `N % 2` or `N & 1`.
 * Shift bits/divide by 2 using `N / 2` or `N >> 1`.
 * Accumulate result: $\text{Ans} = \text{Ans} + (\text{Remainder} \times 10^i)$.
 
-### 2. Binary to Decimal
+## 2. Binary to Decimal
 * Extract binary digits using `N % 10`.
 * Accumulate result: $\text{Ans} = \text{Ans} + (\text{Digit} \times 2^i)$.
 * Divide number by 10 (`N / 10`) until zero.
 
-### 3. Indirect Conversions (e.g., Binary to Octal)
+## 3. Indirect Conversions (e.g., Binary to Octal)
 Instead of direct string mapping, convert to intermediate **Decimal**, then transform to the target base.
 
 ---
@@ -223,7 +226,7 @@ Instead of direct string mapping, convert to intermediate **Decimal**, then tran
 | **Arithmetic** | `N % 2` | `N / 2` | Standard |
 | **Bitwise** | `N & 1` | `N >> 1` | Faster (Hardware-Level) |
 
-### Day11: Number System Conversions in C++
+# Day11: Number System Conversions in C++
 
 ## A complete guide and implementation of number base conversions using direct arithmetic and bitwise optimization techniques in C++.
 
@@ -232,17 +235,17 @@ Instead of direct string mapping, convert to intermediate **Decimal**, then tran
 * **Decimal ↔ Octal**: Base-8 digit extraction and place-value reconstruction.
 * **Binary ↔ Octal**: Inter-base conversion routed via Decimal (`Binary → Decimal → Octal`).
 
-### Day13:Function in c++
+# Day13:Function in c++
 ## Topics Covered1. 
-. Call by Value vs. Call by Reference
-** Understanding how data is passed into functions and its impact on performance and memory.
-** Call by Value: Creates a local copy of the argument. Changes made inside the function do not affect the original variable.
-** Call by Reference: Passes an alias (&) to the original argument. Changes made inside the function directly update the original variable.
-** 2. Function OverloadingHow to define multiple functions with the same name to improve code readability and reusability.
-** Criteria: Functions must have different numbers or types of parameters.Limitation: Changing only the return type is not allowed.
-** Code ExamplesParameter Passing (main.cpp)
-cpp
-```
+* Call by Value vs. Call by Reference
+* Understanding how data is passed into functions and its impact on performance and memory.
+* Call by Value: Creates a local copy of the argument. Changes made inside the function do not affect the original variable.
+* Call by Reference: Passes an alias (&) to the original argument. Changes made inside the function directly update the original variable.
+* 2. Function OverloadingHow to define multiple functions with the same name to improve code readability and reusability.
+* Criteria: Functions must have different numbers or types of parameters.Limitation: Changing only the return type is not allowed.
+* Code ExamplesParameter Passing
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -285,11 +288,8 @@ int main() {
 ```
 
 
-
-
-
   
-###🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
+##🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
 git clone [[https://github.com/jaiswarabhishek638/DSA.git](https://github.com/jaiswarabhishek638/DSA.git)]
 
 # Navigate to the specific directory
@@ -301,7 +301,7 @@ g++ main.cpp -o program
 # Execute the compiled binary
 ./program
 
-📈 Goals
+#📈 Goals
 * [ ] Complete all advanced pattern programs.
 * [ ] Move into Arrays, Vectors, and Time Complexity analyses.
 * [ ] Maintain a daily commit streak to visualize growth.
