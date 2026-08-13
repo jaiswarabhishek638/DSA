@@ -24,6 +24,8 @@ Below is the structured path followed in this repository, designed to build stro
 | **11** | [Number System Conversion](#11-Number-system-conversion-binary-octal-decimal-viceversa) | Number System for Computer | 🟢 Completed   |
 | **13** | [Function](#13-Function-callbyvalue-callbyreference-&-swapbyreference-using&---method-overloading) | call by reference, value,method overloading | 🟢 Completed |
 | **15** | [ARRAY](#15-Arraysame-datatype-cointiguous-memory-loctn) | memory consumption in array,sizeof(),0 based vs 1 based index, 32 vs 64 byte processor| 🟢 Completed  |
+| **16** | [Sorting](#16-sorting-selection-bubble-insertion) | sorting- Selection , insertion , bubble sort | 🟢 Completed  |
+| **17** | [ARRAY Algorithm](#17-Binarysearch-SLT-2Pointer-subarray-suffix-prefix) | Binarysearch, SLT,2Pointer ,subarray ,suffix,prefix | 🟡 In Progress  |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
@@ -47,37 +49,38 @@ int main() {
     cout << "Hello, DSA World!" << endl;
     return 0;
 }
-```
-##3. Input & Output in C++Mastering how data enters and leaves our programs, alongside understanding variables, memory sizes, and data types (int, float, char, bool, double).
+``` 
+
+## 3. Input & Output in C++Mastering how data enters and leaves our programs, alongside understanding variables, memory sizes, and data types (int, float, char, bool, double).
 Using cin >> for user inputs.
 Using cout << for displaying data.
 Handling whitespace strings using getline().
 
-##4. Conditionals (if, else, else if)Teaching the program how to make choices based on conditional expressions and logical operators (&&, ||, !).
+## 4. Conditionals (if, else, else if)Teaching the program how to make choices based on conditional expressions and logical operators (&&, ||, !).
 * Checking if a number is even or odd.
 * Grading systems using else if ladders.
 * Code optimization by arranging conditions efficiently.
 
-##5. Loops & IterationAutomating repetitive tasks. This folder deep-dives into execution control, boundary conditions, and avoiding infinite loops.
+## 5. Loops & IterationAutomating repetitive tasks. This folder deep-dives into execution control, boundary conditions, and avoiding infinite loops.
 * while loop: When the number of iterations is unknown.
 * for loop: Ideal for sequential, known iterations.
 *  do-while loop: Executing at least once before checking the condition.
 *  eyword handling: break and continue.
 
-##🧱 The Pattern Printing Trilogy (Sections 6, 7 & 8)Pattern printing is the ultimate tool for mastering nested loops and visual matrix logic.
+## 🧱 The Pattern Printing Trilogy (Sections 6, 7 & 8)Pattern printing is the ultimate tool for mastering nested loops and visual matrix logic.
 It transitions from basic grid manipulation to complex coordinate mapping.
 
-##6. Pattern Printing - Basic LevelUnderstanding Rows and Columns ($i, j$ mapping).
+## 6. Pattern Printing - Basic LevelUnderstanding Rows and Columns ($i, j$ mapping).
 * Solid Rectangle: Basic nested loop grid.
 * Hollow Rectangle: Conditional boundary printing (i == 1 || i == n).
 * Half Pyramid: Dependent inner loop controls (j <= i).
 
-##7. Pattern Printing - Intermediate LevelHandling spaces and varying data types inside loops.
+## 7. Pattern Printing - Intermediate LevelHandling spaces and varying data types inside loops.
 * Inverted Half Pyramid: Counting down loops.
 * Numbered Pyramids: Printing loop counters instead of stars (*).
 * Floyd's Triangle: Continuously increasing integer tracking across rows.
 
-##8. Pattern Printing - Advanced & Hard LevelComplex algorithmic logic involving multiple sub-loops and symmetrical math.
+## 8. Pattern Printing - Advanced & Hard LevelComplex algorithmic logic involving multiple sub-loops and symmetrical math.
 * Butterfly Pattern: Multi-zone space and star calculations.
 * Diamond Pattern: Symmetrical upper and lower inverted loops.
 * Palindromic Pyramids: Counting down then counting up on the same line.
@@ -88,7 +91,7 @@ It transitions from basic grid manipulation to complex coordinate mapping.
     3 2 1 2 3
   4 3 2 1 2 3 4
 
-##9. Operators
+## 9. Operators
 * #1. Comparision operators  
 * #4 arithmetic operator
 ```cpp
@@ -174,7 +177,7 @@ int main(){
 }
 ```
 
-##10. 📚 What I Covered:
+## 10. 📚 What I Covered:
 * **While & Do-While Loops:** Masters of conditional repetition. Explored the entry-controlled nature of `while` vs. the exit-controlled nature of `do-while`.
 * **The `do-while` Disadvantage:** Realised how a `do-while` loop executes code at least once before checking conditions, which can lead to logical bugs if data inputs (like `0`) are not explicitly guarded.
 * **Jump Statements (`break` & `continue`):** 
@@ -184,7 +187,7 @@ int main(){
 * **Scope of Variables:** Understood local vs. global scopes, variable lifetimes inside curly braces `{}`, and how redeclaration flags errors inside the exact same execution block.
 
 ---
-## 🛠️ Practical Implementations Completed:
+# 🛠️ Practical Implementations Completed:
 1. **Factors of a Number:** Wrote an optimised `while` loop tracking zero-remainders (`n % i == 0`) to extract all factors sequentially.
 2. **Dynamic Multiplication Tables:** Implemented simple arithmetic iterators to generate standard custom tables.
 3. **Loop Control Optimization:** Applied the `continue` statement to systematically filter and skip multi-factor iterations without breaking program runtime.
@@ -202,7 +205,7 @@ Here is a quick snapshot of what I cracked today:
 💡 Applied these concepts to build programmatic factor-finders, mathematical tables, and optimized conditional filters. 
 
 
-## 💡 Logic Overview
+# 💡 Logic Overview
 
 ## 1. Decimal to Binary
 * Extract remainder using `N % 2` or `N & 1`.
@@ -289,7 +292,7 @@ int main() {
 
 
   
-##🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
+## 🛠️ How to Compile and RunTo run any of the C++ code files locally, ensure you have a g++ compiler installed, then run the following commands in your terminal:Bash# Clone the repository
 git clone [[https://github.com/jaiswarabhishek638/DSA.git](https://github.com/jaiswarabhishek638/DSA.git)]
 
 # Navigate to the specific directory
