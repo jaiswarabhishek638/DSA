@@ -26,7 +26,7 @@ Below is the structured path followed in this repository, designed to build stro
 | **15** | [ARRAY](#15-Arraysame-datatype-cointiguous-memory-loctn) | memory consumption in array,sizeof(),0 based vs 1 based index, 32 vs 64 byte processor| 🟢 Completed  |
 | **16** | [Sorting](#16-sorting-selection-bubble-insertion) | sorting- Selection , insertion , bubble sort | 🟢 Completed  |
 | **17** | [ARRAY Algorithm](#17-Binarysearch-SLT-2Pointer-subarray-suffix-prefix) | Binarysearch, SLT,2Pointer ,subarray ,suffix,prefix | 🟢 Completed   |
-| **18** | [2D ARRAY Algorithm](#18-2d-array-matrix-reverse-sum/multi-matrix) | Matrix, reverse,sumof 2d array | 🟡 In Progress  |
+| **18** | [2D ARRAY Algorithm](#18-2d-array-matrix-reverse-sum/multi-matrix) | Matrix, reverse,sumof 2d array, vector<vector<int>> matrix | 🟢 Completed  |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
