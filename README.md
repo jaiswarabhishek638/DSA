@@ -27,7 +27,7 @@ Below is the structured path followed in this repository, designed to build stro
 | **16** | [Sorting](#16-sorting-selection-bubble-insertion) | sorting- Selection , insertion , bubble sort | 🟢 Completed  |
 | **17** | [ARRAY Algorithm](#17-Binarysearch-SLT-2Pointer-subarray-suffix-prefix) | Binarysearch, SLT,2Pointer ,subarray ,suffix,prefix | 🟢 Completed   |
 | **18** | [2D ARRAY Algorithm](#18-2d-array-matrix-reverse-sum/multi-matrix) | Matrix, reverse,sumof 2d array, vector<vector<int>> matrix | 🟢 Completed  |
-| **19** | [String](#19-DAY-1-string-getline-for-paragraph,append,size,escape,pangram,rotatedby-2-place,defanging-an-ip,sort-a-string) | Getline(paragraph), size(), append(2string add), Escape char, pangram, rotatedby-2-place, defanging-an-ip, sort-a-string | 🟢 Completed  |
+| **19** | [String](#19-DAY-1-string-getline-for-paragraph,append,size,escape,pangram,rotatedby-2-place,defanging-an-ip,sort-a-string,sliding-window-protocol) | Getline(paragraph), size(), append(2string add), Escape char, pangram, rotatedby-2-place, defanging-an-ip, sort-a-string, sliding window protocol in O(n) | 🟢 Completed  |
 ```
 ---🟡 In Progress 
 ---🔴 Upcoming
